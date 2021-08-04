@@ -9,16 +9,16 @@ resources:
   - name: spring-boot-service
     type: git
     source:
-      uri: https://github.com/azmathasan92/concourse-ci-cd.git
+      uri: https://github.com/smallaiah16/concourse-ci-cd.git
       branch: master
 
   - name: spring-boot-service-docker-repository
     type: docker-image
     source:
-      email: ((docker-hub-email))
-      username: ((docker-hub-username))
-      password: ((docker-hub-password))
-      repository: ((docker-hub-username))/((docker-hub-repo-name))
+      email: smallaiah16@gmail.com
+      username: cicdadmin
+      password: Blueshirt@123
+      repository: cicdadmin/jmkarthik/concourse-kubectl-resource
 
   - name: kubectl
     type: kubectl-resource
